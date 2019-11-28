@@ -1,0 +1,300 @@
+
+body
+{
+    margin: 0px;
+}
+
+
+/* MENU EN HAUT FIXE */
+.menu
+{
+    display: flex;
+    justify-content: flex-end; /* aligne éléments à droite */
+}
+
+header
+{
+    height: 60px;
+    width: 100%;
+    background-color: tomato;
+    position: fixed;
+}
+
+.menu a
+{
+    text-decoration: none;
+    padding-right: 20px;   /*pour espacer les a */
+    color: white;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase; /* met le texte en majuscule */
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Liberty
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase; /* met le texte en majuscule */
+    float: left;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+/* ************************************************************* */
+
+/*PARTIE PHOTO HAUT*/
+.Hello
+{
+    background-image: url("./images/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;  /* pour que le background prenne bien tout l'espace*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Poiret One', cursive;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    /* margin-bottom: 150px; */
+}
+
+.Hello h1
+{
+    color: white;
+}
+
+.bouton1
+{
+    border: 1px solid black;
+    background-color: tomato;
+    border-radius: 25px;
+    height: 30px;
+    width: 300px;
+    padding-top: 15px;
+    margin-bottom: 40px;
+}
+
+.bouton1 a
+{
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    color: white;
+}
+/* ********************************************************** */
+
+/* OUR WORKS */
+.work
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+}
+.work p
+{
+    width: 40%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+/* ********************************************************** */
+
+/* PHOTOS */
+.ligne1
+{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.ligne2
+{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.photos
+{
+    width: 80%;
+    margin: auto; /*seul moyen de centrer qui fonctionne pour ce coup là*/
+}
+/* ********************************************************* */
+
+/* PRINCING */
+.pricing
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+}
+
+.pricing p
+{
+    width: 40%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+/* *********************************************************** */
+
+/* TABLEAUX */
+.tableaux
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*autre méthode pour centrer en réduisant l'espace*/
+}
+
+table
+{
+    text-align: center;
+    margin-right: 40px;
+    border: 1px solid black;
+    width: 220px;
+    margin-bottom: 50px; /*marge en-dessous du tableau */
+}
+
+th
+{
+    font-family: 'Didact Gothic', sans-serif;
+    padding-bottom: 20px; 
+    border-bottom: 1px solid black; 
+    background-color:#e8e5e3;
+}
+
+td
+{
+    font-family: 'Didact Gothic', sans-serif;
+    padding-top: 15px; 
+}
+
+hr
+{
+    width: 80%;
+}
+
+button
+{
+    margin-bottom: 15px;
+}
+/* ********************************************************** */
+/* CONTACT US */
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    background: #2b2e47;
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+}
+
+.contact p
+{
+    width: 40%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+/* FORMULAIRE */
+.formulaire
+{
+    display: flex;
+    flex-direction: row;
+    background: #2b2e47;
+    justify-content: center;
+    padding-bottom: 50px;  /*marge du bas */
+}
+
+fieldset
+{
+    border: 0;
+}
+
+input  /* Name + email */
+{
+    width: 450px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0;
+}
+
+select  /* service */
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0;
+    padding-bottom: 8px;
+}
+
+.SEND
+{
+    width: 120px;
+    height: 40px;
+    background: tomato;
+    margin-left: 25px;
+    border: 0;
+    color: white;
+    border-radius: 3px;
+    border: 0;
+}
+
+textarea /* zone msg */
+{
+    width: 450px;
+    height: 167px;
+    border-radius: 3px;
+    border: 0;
+}
+/* ************************************************************* */
+/* BOUTON ROUGE */
+
+.bouton_rouge
+{
+    display: flex;
+    justify-content: center; 
+}
+.fa-angle
+{
+    background: tomato;
+    border-radius: 50px;
+    width: 65px;
+    height: 65px;
+    position: relative;
+    top: -30px;
+}
+i
+{
+    color: white;
+    position: absolute;
+    left: 12px;
+    bottom: 2px;  /*absolute pr figer position ds div fa-angle */
+    
+}
+/* ************************************************************* */
+/* FOOTER */
+.copyright
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+}
+
+.reseaux
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+
+/* mdp FEIWN V@lkir1a */
