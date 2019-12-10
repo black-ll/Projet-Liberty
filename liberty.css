@@ -25,10 +25,20 @@ header
     text-decoration: none;
     padding-right: 20px;   /*pour espacer les a */
     color: white;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase; /* met le texte en majuscule */
     text-align: center;
     padding-top: 20px;
+}
+
+.menu a:hover
+{
+    text-decoration: underline;
+}
+
+.menu a:active
+{
+    text-decoration: underline;
 }
 
 .Liberty
@@ -64,6 +74,7 @@ header
 .Hello h1
 {
     color: white;
+    font-size: 45px;
 }
 
 .bouton1
@@ -75,6 +86,7 @@ header
     width: 300px;
     padding-top: 15px;
     margin-bottom: 40px;
+    
 }
 
 .bouton1 a
@@ -120,11 +132,63 @@ header
 .photos
 {
     width: 80%;
-    margin: auto; /*seul moyen de centrer qui fonctionne pour ce coup là*/
+    margin: auto; /*permet de centrer*/
+    
 }
+.photos a 
+{
+    width: 270px;
+    height: 203px;
+}
+
+.photos a div {
+    background: tomato;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.photos a div:hover {
+    opacity: .5;
+}
+
+.ligne1 a:nth-child(1) {
+    background: url(./images/img-0.jpg) center center / cover;
+}
+
+.ligne1 a:nth-child(2) {
+    background: url(./images/img-1.jpg) center center / cover;
+}
+
+.ligne1 a:nth-child(3) {
+    background: url(./images/img-2.jpg) center center / cover;
+}
+
+.ligne1 a:nth-child(4) {
+    background: url(./images/img-3.jpg) center center / cover;
+}
+
+.ligne2 a:nth-child(1) {
+    background: url(./images/img-4.jpg) center center / cover;
+}
+
+.ligne2 a:nth-child(2) {
+    background: url(./images/img-5.jpg) center center / cover;
+}
+
+.ligne2 a:nth-child(3) {
+    background: url(./images/img-6.jpg) center center / cover;
+}
+
+.ligne2 a:nth-child(4) {
+    background: url(./images/img-7.jpg) center center / cover;
+}
+
 /* ********************************************************* */
 
-/* PRINCING */
+/* PRICING */
 .pricing
 {
     display: flex;
@@ -180,7 +244,46 @@ hr
 button
 {
     margin-bottom: 15px;
+    width: 170px;
+    height: 50px;
+    color: white;
+    background-color: #1d1f3d;
+    border-radius: 5px;
+    border: none;
 }
+
+.Gold th
+{
+    background-color: #4b88e3;
+}
+
+.Gold button
+{
+    background-color: #4b88e3;
+}
+
+.Gold table
+{
+    border: 1px solid #4b88e3;
+}
+
+.Diamond:hover
+{
+    font-size: 110%;
+}
+.Gold:hover
+{
+    font-size: 110%;
+}
+.Silver:hover
+{
+    font-size: 110%;
+}
+.Bronze:hover
+{
+    font-size: 110%;
+}
+
 /* ********************************************************** */
 /* CONTACT US */
 .contact
@@ -235,6 +338,7 @@ select  /* service */
 
 .SEND
 {
+    transform: translateY(4px);
     width: 120px;
     height: 40px;
     background: tomato;
@@ -244,6 +348,7 @@ select  /* service */
     border-radius: 3px;
     border: 0;
 }
+
 
 textarea /* zone msg */
 {
@@ -284,17 +389,19 @@ i
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
 }
 
 .reseaux
 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: space-around;
+    width: 15%;
+    margin: auto;
+    margin-top: 15px;
 }
 
 
 
-/* mdp FEIWN V@lkir1a */
